@@ -1,17 +1,39 @@
 {
-    "editor.tokenColorCustomizations": {},
-    "workbench.activityBar.location": "top",
-    "editor.minimap.enabled": false,
-    "window.menuBarVisibility": "compact",
-    "window.commandCenter": false,
-    "window.zoomLevel": 1,
-    "workbench.layoutControl.enabled": false,
-    "workbench.browser.showInTitleBar": false,
-    "editor.fontSize": 18,
+    // === Editor Settings ===
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontFamily": "OperatorMonoLig Nerd Font Mono",
     "editor.fontLigatures": true,
-    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.renderLineHighlight": "none",
+    "editor.selectionHighlight": false,
     "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "editor.tokenColorCustomizations": {},
+
+    // === Workbench & Window Settings ===
+    "explorer.compactFolders": false,
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "window.zoomLevel": 1,
+    "workbench.activityBar.location": "top",
+    "workbench.browser.showInTitleBar": false,
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.editorAssociations": {
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "*.qrc": "qt-core.qrcEditor"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
+
+    // === Extensions & Tooling ===
+    "extensions.supportAgentsWindow": {
+        "monokai.theme-monokai-pro-vscode": true
+    },
     "json.schemaDownload.trustedDomains": {
         "https://schemastore.azurewebsites.net/": true,
         "https://raw.githubusercontent.com/microsoft/vscode/": true,
@@ -22,13 +44,18 @@
         "https://developer.microsoft.com/json-schemas/": true,
         "https://biomejs.dev": true
     },
-    "workbench.colorTheme": "Monokai Pro",
     "material-icon-theme.hidesExplorerArrows": true,
-
+    "qt-core.additionalQtPaths": [
+        {
+            "name": "Qt-5.15.19-linux-g++-x86_64_from_PATH",
+            "path": "/usr/bin/qmake"
+        }
+    ],
+    "tailwindCSS.emmetCompletions": true,
     "vim.handleKeys": {
-    "<C-p>": false,
-    "<C-w>": false,
-    "<C-k>": false
-},
-"workbench.iconTheme": "material-icon-theme"
+        "<C-p>": false,
+        "<C-w>": false,
+        "<C-k>": false,
+        "<C-b>": false
+    }
 }
