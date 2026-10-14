@@ -1,63 +1,56 @@
 {
-  // === Editor Settings ===
-  "editor.cursorSmoothCaretAnimation": "on",
+  // Breadcrumbs & Navigation
+  "breadcrumbs.enabled": false,
+
+  // Editor Appearance & Behavior
+  "editor.colorDecorators": false,
   "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
   "editor.fontFamily": "'Dank Mono', 'OperatorMonoLig Nerd Font Mono', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 20,
-  "editor.lineHeight": 40,
+  "editor.fontSize": 16,
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false,
+  "editor.hover.enabled": "off",
+  "editor.lineHeight": 40,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "none",
   "editor.selectionHighlight": false,
+  "editor.showFoldingControls": "never",
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": false,
   "editor.stickyScroll.scrollWithEditor": false,
-  "editor.guides.indentation": false,
-  "editor.guides.bracketPairs": false,
-  "editor.hover.enabled": "off",
-  "editor.colorDecorators": false,
   "editor.tokenColorCustomizations": {},
 
-  // === Workbench & Window Settings ===
+  // Explorer
   "explorer.compactFolders": false,
-  "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
-  "window.zoomLevel": 1,
-  "workbench.activityBar.location": "hidden",
-  "workbench.sideBar.location": "right",
-  "workbench.browser.showInTitleBar": false,
-  "workbench.colorTheme": "Monokai Pro",
-  "workbench.editor.showTabs": "none",
-  "workbench.statusBar.visible": false,
-  "workbench.editorAssociations": {
-    "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
-    "*.qrc": "qt-core.qrcEditor"
-  },
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.layoutControl.enabled": false,
 
-  // === Files & Auto-Save ===
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-
-  // === Extensions & Tooling ===
+  // Extensions & Integrations
   "extensions.supportAgentsWindow": {
     "monokai.theme-monokai-pro-vscode": true
   },
+
+  // File Handling
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // JSON Schemas
   "json.schemaDownload.trustedDomains": {
-    "https://schemastore.azurewebsites.net/": true,
-    "https://raw.githubusercontent.com/microsoft/vscode/": true,
-    "https://raw.githubusercontent.com/devcontainers/spec/": true,
-    "https://www.schemastore.org/": true,
-    "https://json.schemastore.org/": true,
-    "https://json-schema.org/": true,
+    "https://biomejs.dev": true,
     "https://developer.microsoft.com/json-schemas/": true,
-    "https://biomejs.dev": true
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://www.schemastore.org/": true
   },
+
+  // Extension Settings
   "material-icon-theme.hidesExplorerArrows": true,
   "qt-core.additionalQtPaths": [
     {
@@ -66,11 +59,34 @@
     }
   ],
   "tailwindCSS.emmetCompletions": true,
-  "vim.useSystemClipboard": true,
+
+  // Vim Keybindings
   "vim.handleKeys": {
-    "<C-p>": false,
-    "<C-w>": false,
+    "<C-b>": false,
     "<C-k>": false,
-    "<C-b>": false
-  }
+    "<C-p>": false,
+    "<C-w>": false
+  },
+  "vim.useSystemClipboard": true,
+
+  // Window Framing
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "window.menuBarVisibility": "hidden",
+  "window.titleBarStyle": "native",
+  "window.zoomLevel": 1,
+
+  // Workbench Layout & Theme
+  "workbench.activityBar.location": "hidden",
+  "workbench.browser.showInTitleBar": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.editor.showTabs": "none",
+  "workbench.editorAssociations": {
+    "*.qrc": "qt-core.qrcEditor",
+    "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": false
 }
